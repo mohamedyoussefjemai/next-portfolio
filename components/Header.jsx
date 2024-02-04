@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 // components
 import ThemeToggler from "./ThemeToggler";
 import Logo from "./Logo";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
-import { usePathname } from "next/navigation";
 
 export const Header = () => {
   const [header, setHeader] = useState(false);

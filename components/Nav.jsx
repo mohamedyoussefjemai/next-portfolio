@@ -5,26 +5,14 @@ import { usePathname } from "next/navigation";
 // framer
 import { motion } from "framer-motion";
 
-const links = [
-  {
-    path: "/",
-    name: "home",
-  },
-  {
-    path: "/projects",
-    name: "my projects",
-  },
-  {
-    path: "/contact",
-    name: "contact",
-  },
-];
+// data
+import navLinks from "@/shared/data/nav.data";
 
 const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
   const path = usePathname();
   return (
     <nav className={`${containerStyles}`}>
-      {links.map((link, index) => {
+      {navLinks.map((link, index) => {
         return (
           <Link
             href={link.path}

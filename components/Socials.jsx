@@ -11,25 +11,28 @@ import {
   RiInstagramFill,
 } from "react-icons/ri";
 
+// data
+import iconLinks from "@/shared/data/socials.data";
+
 const icons = [
   {
-    path: "/",
+    path: iconLinks.youtube,
     name: <RiYoutubeFill />,
   },
   {
-    path: "/",
+    path: iconLinks.linkedin,
     name: <RiLinkedinFill />,
   },
   {
-    path: "/",
+    path: iconLinks.github,
     name: <RiGithubFill />,
   },
   {
-    path: "/",
+    path: iconLinks.facebook,
     name: <RiFacebookFill />,
   },
   {
-    path: "/",
+    path: iconLinks.instagram,
     name: <RiInstagramFill />,
   },
 ];
