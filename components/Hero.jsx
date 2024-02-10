@@ -8,7 +8,11 @@ import Socials from "./Socials";
 import Badge from "./Badge";
 
 // icons
-import { RiBriefcase4Fill, RiTeamFill, RiTodoFill } from "react-icons/ri";
+import {
+  RiBriefcase4Fill,
+  RiTerminalBoxFill,
+  RiTodoFill,
+} from "react-icons/ri";
 
 // data
 import { HeroData } from "@/shared/data/hero.data";
@@ -24,19 +28,32 @@ const Hero = () => {
               {HeroData.job}
             </div>
             <h1 className="h1 mb-4">{HeroData.title}</h1>
-            <p className="subtitle max-w-[498px] mx-auto xl:mx-0">
-              {HeroData.description}
+            <p className="subtitle max-w-[498px] mx-auto xl:mx-0 text-justify">
+              {HeroData.description1}
+              <br />
+              {HeroData.description2}
+              <br />
+              <q>
+                Success belongs to everyone. It comes down to teamwork merit.
+              </q>
+              by <em>Frank PICCARD</em>
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
-              <Link href={`${HeroData.primaryButton.path}`}>
-                <Button className="gap-x-2">
+              {/* <Link href={`${HeroData.primaryButton.path}`}>
+                <Button  className="gap-x-2">
                   {HeroData.primaryButton.text} <Send size={18} />
                 </Button>
-              </Link>
-              <Button variant="secondary" className="gap-x-2">
-                {HeroData.secondaryButton.text} <Download size={18} />
-              </Button>
+              </Link> */}
+              <a
+                href={`${HeroData.secondaryButton.path}`}
+                alt="curriculum vitae Mohamed Youssef JEMAI"
+                target="_blank"
+              >
+                <Button variant="secondary" className="gap-x-2">
+                  {HeroData.secondaryButton.text} <Download size={18} />
+                </Button>
+              </a>
             </div>
             {/* socials */}
             <Socials
@@ -55,7 +72,7 @@ const Hero = () => {
             />
             {/* badge 2 */}
             <Badge
-              containerStyles="absolute top-[80%] -left-[1rem]"
+              containerStyles="absolute top-[54%] -left-[1rem]"
               icon={<RiTodoFill />}
               endCountNum={HeroData.badges.Todo.endCountNum}
               endCountText={HeroData.badges.Todo.endCountText}
@@ -63,8 +80,8 @@ const Hero = () => {
             />
             {/* badge 3 */}
             <Badge
-              containerStyles="absolute top-[55%] -right-[1rem]"
-              icon={<RiTeamFill />}
+              containerStyles="absolute top-[50%] -right-[1rem]"
+              icon={<RiTerminalBoxFill />}
               endCountNum={HeroData.badges.Team.endCountNum}
               endCountText={HeroData.badges.Team.endCountText}
               badgeText={HeroData.badges.Team.badgeText}

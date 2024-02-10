@@ -19,10 +19,7 @@ const Skills = () => {
           {getData(skillsData, "skills").data.map((item, index) => {
             const { name } = item;
             return (
-              <div
-                className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
-                key={index}
-              >
+              <div className="w-full text-left mx-auto xl:mx-0" key={index}>
                 <div className="font-medium">{name}</div>
               </div>
             );
@@ -36,7 +33,7 @@ const Skills = () => {
         </h4>
         <div className="border-b border-border mb-4"></div>
         {/* tools list */}
-        <div className="flex gap-x-8 justify-center xl:justify-start">
+        <div className="grid lg:grid-cols-10  grid-cols-4 gap-x-8 gap-y-2 justify-center xl:justify-start">
           {getData(skillsData, "tools").data.map((item, index) => {
             const { imgPath } = item;
             return (

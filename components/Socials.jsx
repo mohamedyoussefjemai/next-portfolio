@@ -9,6 +9,7 @@ import {
   RiGithubFill,
   RiFacebookFill,
   RiInstagramFill,
+  RiGitlabFill,
 } from "react-icons/ri";
 
 // data
@@ -16,16 +17,16 @@ import iconLinks from "@/shared/data/socials.data";
 
 const icons = [
   {
-    path: iconLinks.youtube,
-    name: <RiYoutubeFill />,
-  },
-  {
     path: iconLinks.linkedin,
     name: <RiLinkedinFill />,
   },
   {
     path: iconLinks.github,
     name: <RiGithubFill />,
+  },
+  {
+    path: iconLinks.gitlab,
+    name: <RiGitlabFill />,
   },
   {
     path: iconLinks.facebook,

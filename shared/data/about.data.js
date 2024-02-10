@@ -2,22 +2,21 @@ const aboutInfoData = {
   name: "Mohamed Youssef JEMAI",
   phone: "+216 20 162 470",
   mail: "mohamedyoussef.jemai@gmail.com",
-  birthday: "Né le 16 Jan, 1998",
-  graduation1:
-    "Licence en science technologique de l'information et de lé télécommunication",
-  graduation2: "Cycle Ingénieur en informatique",
-  address: "Avenue de l'UMA, La soukra, 2036",
+  birthday: "Born January 16, 1998",
+  graduation1: "Bachelor Degree in Science of Information Technology ",
+  graduation2: "Bachelor Degree in Computer Engineering ",
+  address: "Avenue de l'UMA, La Soukra, 2036",
 };
 
 const pageAboutData = {
   title: "About me",
-  profileImage: "/about/developer.png",
+  profileImage: "/about/developer-about.png",
 };
 
 const profileInfoTabData = {
-  title: "Unmatched Service Quality for over 10 years",
+  title: "I make it a point of honor to achieve my goals",
   description:
-    "I specialize in crafting intuitive websites with cutting-edge technologies, delivering dynamic and engaging user experience.",
+    "I specialize in creating intuitive websites with cutting-edge technology, delivering a dynamic and engaging user experience. mainly backend development and the proposal of architecture and optimized solution according to the need",
   languageTitle: "Language Skill",
   languages: "English, French, Arabic",
 };
@@ -36,16 +35,31 @@ const skillsData = [
     title: "skills",
     data: [
       {
-        name: "HTML, CSS",
+        name: "Languages: Typescript, JavaScript, HTML, CSS/CSS3, SCSS",
       },
       {
-        name: "HTML, CSS",
+        name: "Backend Frameworks: NodeJS (ExpressJS / NestJS) ",
       },
       {
-        name: "HTML, CSS",
+        name: "Architecture: MVC , monolethic architecture, micro service architecture.",
       },
       {
-        name: "HTML, CSS",
+        name: "Frontend Frameworks: Vue 3, React, NextJS",
+      },
+      {
+        name: "CSS Frameworks: Tailwind CSS/UI, CSS 3",
+      },
+      {
+        name: "Databases: MySQL, MongoDB, SQLite, PostgreSQL",
+      },
+      {
+        name: "CMS: Wordpress",
+      },
+      {
+        name: "Methodologies: Agile Software Development.",
+      },
+      {
+        name: "Soft Skills: Communication, Problem solving, Time management, Leadership, Empathy, Emotional intelligence, Self-managed, Self-organized, Strategic thinking",
       },
     ],
   },
@@ -59,7 +73,25 @@ const skillsData = [
         imgPath: "/about/figma.svg",
       },
       {
+        imgPath: "/about/postgresql.svg",
+      },
+      {
         imgPath: "/about/notion.svg",
+      },
+      {
+        imgPath: "/about/docker.svg",
+      },
+      {
+        imgPath: "/about/yaml.svg",
+      },
+      {
+        imgPath: "/about/markdown.svg",
+      },
+      {
+        imgPath: "/about/vercel.svg",
+      },
+      {
+        imgPath: "/about/jira.svg",
       },
       {
         imgPath: "/about/wordpress.svg",
@@ -72,19 +104,14 @@ const qualificationData = [
     title: "education",
     data: [
       {
-        university: "Example University",
-        qualification: "Bachelor of Science",
-        years: "2015 - 2018",
+        university: "Computer Engineer",
+        qualification: "Bachelor Degree in Computer Engineering",
+        years: "2019-2022",
       },
       {
-        university: "Another University",
-        qualification: "Bachelor of Science 2",
-        years: "2015 - 2018",
-      },
-      {
-        university: "Another University 3",
-        qualification: "Bachelor of Science 2",
-        years: "2015 - 2018",
+        university: "ISET'COM",
+        qualification: "Bachelor Degree in Science of Information Technology",
+        years: "2016 - 2019",
       },
     ],
   },
@@ -92,20 +119,40 @@ const qualificationData = [
     title: "experience",
     data: [
       {
-        company: "Example Company",
-        role: "Bachelor of Science",
-        years: "2015 - 2018",
+        company: "RS Technologies",
+        role: "Full Stack JS Developer",
+        years: "November 2023 - Present",
       },
       {
-        company: "Example Company",
-        role: "Bachelor of Science",
-        years: "2015 - 2018",
+        company: "Elisys Paris, France",
+        role: "Full Stack JS Developer as a Freelancer",
+        years: "March 2023 - August 2023",
       },
       {
-        company: "Example Company",
-        role: "Bachelor of Science",
-        years: "2015 - 2018",
+        company: "Swiss Premium Negoce SA",
+        role: "Full Stack JS Developer",
+        years: "September 2022 - August 2023",
       },
+      // {
+      //   company: "Elisys Paris, France",
+      //   role: "Full Stack JS Developer",
+      //   years: "December 2021 - June 2022",
+      // },
+      // {
+      //   company: "Iset'com, Tunis",
+      //   role: "Part-Time Teacher",
+      //   years: "September 2021 - December 2022",
+      // },
+      // {
+      //   company: "AlberoIT , Tunis",
+      //   role: "Junior project manager",
+      //   years: "June 2021 - September 2022",
+      // },
+      // {
+      //   company: "Netcom , Tunis",
+      //   role: "Network and telecom intern",
+      //   years: "September 2018 - January 2019",
+      // },
     ],
   },
 ];
