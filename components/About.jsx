@@ -13,8 +13,8 @@ import {
   Calendar,
 } from "lucide-react";
 
-import PersonalInfo from "./about-tabs/personalInfo";
-import Qualifications from "./about-tabs/Qualifications";
+import PersonalInfo from "@/components/about-tabs/PersonalInfo";
+import Qualifications from "@/components/about-tabs/Qualifications";
 
 // data
 import aboutInfoData, {
@@ -23,7 +23,7 @@ import aboutInfoData, {
   pageAboutData,
   TabsCategoriesEnum,
 } from "@/shared/data/about.data";
-import Skills from "./about-tabs/Skills";
+import Skills from "@/components/about-tabs/Skills";
 
 const infoData = [
   {
