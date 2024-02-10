@@ -20,7 +20,7 @@ export const HeroData = {
     Todo: {
       endCountNum: 5,
       //  endCountText: "k",
-      badgeText: "Web Freelance",
+      badgeText: "5 Web Freelance",
     },
     Team: {
       endCountNum: 39,
