@@ -8,19 +8,14 @@ import Socials from "./Socials";
 import Badge from "./Badge";
 
 // icons
-import {
-  RiBriefcase4Fill,
-  RiTeamFill,
-  RiTodoFill,
-  RiArrowDownSLine,
-} from "react-icons/ri";
+import { RiBriefcase4Fill, RiTeamFill, RiTodoFill } from "react-icons/ri";
 
 // data
 import { HeroData } from "@/shared/data/hero.data";
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
+    <section className="py-12 xl:py-24 h-[800px] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/* text */}
@@ -80,10 +75,6 @@ const Hero = () => {
               imgSrc={HeroData.devImgSrc}
             />
           </div>
-        </div>
-        {/* icon */}
-        <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12">
-          <RiArrowDownSLine className="text-3xl text-primary" />
         </div>
       </div>
     </section>

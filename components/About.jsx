@@ -11,8 +11,10 @@ import {
   PhoneCall,
   GraduationCap,
   Calendar,
-  Briefcase,
 } from "lucide-react";
+
+import PersonalInfo from "./about-tabs/personalInfo";
+import Qualifications from "./about-tabs/Qualifications";
 
 // data
 import aboutInfoData, {
@@ -21,7 +23,7 @@ import aboutInfoData, {
   pageAboutData,
   TabsCategoriesEnum,
 } from "@/shared/data/about.data";
-import PersonalInfo from "./about-tabs/personalInfo";
+import Skills from "./about-tabs/Skills";
 
 const infoData = [
   {
@@ -55,11 +57,8 @@ const infoData = [
 ];
 
 const About = () => {
-  const getData = (arr, title) => {
-    return arr.find((item) => item.title === title);
-  };
   return (
-    <section className="xl:h-[860px] pb-12 xl:py-24">
+    <section className="xl:h-[860px] pb-12 xl:py-20">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           {pageAboutData.title}
@@ -73,7 +72,7 @@ const About = () => {
             />
           </div>
           {/* tabs */}
-          <div className="flex-1">
+          <div className="flex-1 ">
             <Tabs defaultValue={TabsCategoriesEnum[0].value}>
               <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none">
                 {TabsCategoriesEnum.map((el, index) => (
@@ -92,8 +91,10 @@ const About = () => {
                   <TabsContent value={el.value} key={index}>
                     {el.value === "personal" ? (
                       <PersonalInfo infoData={infoData} />
+                    ) : el.value === "qualifications" ? (
+                      <Qualifications infoData={infoData} />
                     ) : (
-                      <div>test</div>
+                      <Skills />
                     )}
                   </TabsContent>
                 ))}

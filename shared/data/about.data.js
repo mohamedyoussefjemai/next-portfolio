@@ -14,6 +14,23 @@ const pageAboutData = {
   profileImage: "/about/developer.png",
 };
 
+const profileInfoTabData = {
+  title: "Unmatched Service Quality for over 10 years",
+  description:
+    "I specialize in crafting intuitive websites with cutting-edge technologies, delivering dynamic and engaging user experience.",
+  languageTitle: "Language Skill",
+  languages: "English, French, Arabic",
+};
+
+const qualificationTabData = {
+  title: "My Awesome Journey",
+};
+const skillTabData = {
+  title: "What i use everyday",
+  name: "Skills",
+  tools: "Tools",
+};
+
 const skillsData = [
   {
     title: "skills",
@@ -76,17 +93,17 @@ const qualificationData = [
     data: [
       {
         company: "Example Company",
-        qualification: "Bachelor of Science",
+        role: "Bachelor of Science",
         years: "2015 - 2018",
       },
       {
         company: "Example Company",
-        qualification: "Bachelor of Science",
+        role: "Bachelor of Science",
         years: "2015 - 2018",
       },
       {
         company: "Example Company",
-        qualification: "Bachelor of Science",
+        role: "Bachelor of Science",
         years: "2015 - 2018",
       },
     ],
@@ -109,4 +126,12 @@ const TabsCategoriesEnum = [
 ];
 
 export default aboutInfoData;
-export { skillsData, qualificationData, pageAboutData, TabsCategoriesEnum };
+export {
+  skillsData,
+  qualificationData,
+  pageAboutData,
+  TabsCategoriesEnum,
+  profileInfoTabData,
+  qualificationTabData,
+  skillTabData,
+};
