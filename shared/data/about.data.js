@@ -35,31 +35,40 @@ const skillsData = [
     title: "skills",
     data: [
       {
-        name: "Languages: Typescript, JavaScript, HTML, CSS/CSS3, SCSS",
+        title: "Languages: ",
+        name: " Typescript, JavaScript, HTML, CSS/CSS3, SCSS.",
       },
       {
-        name: "Backend Frameworks: NodeJS (ExpressJS / NestJS) ",
+        title: "Backend Frameworks: ",
+        name: "NodeJS (ExpressJS / NestJS).",
       },
       {
-        name: "Architecture: MVC , monolethic architecture, micro service architecture.",
+        title: "Architecture: ",
+        name: "MVC , monolethic architecture, micro service architecture.",
       },
       {
-        name: "Frontend Frameworks: Vue 3, React, NextJS",
+        title: "Frontend Frameworks: ",
+        name: "Vue 3, React, NextJS.",
       },
       {
-        name: "CSS Frameworks: Tailwind CSS/UI, CSS 3",
+        title: "CSS Frameworks: ",
+        name: "Tailwind CSS/UI, CSS 3.",
       },
       {
-        name: "Databases: MySQL, MongoDB, SQLite, PostgreSQL",
+        title: "Databases: ",
+        name: "MySQL, MongoDB, SQLite, PostgreSQL.",
       },
       {
-        name: "CMS: Wordpress",
+        title: "CMS: ",
+        name: "Wordpress.",
       },
       {
-        name: "Methodologies: Agile Software Development.",
+        title: "Methodologies: ",
+        name: "Agile Software Development.",
       },
       {
-        name: "Soft Skills: Communication, Problem solving, Time management, Leadership, Empathy, Emotional intelligence, Self-managed, Self-organized, Strategic thinking",
+        title: "Soft Skills: ",
+        name: "Communication, Problem solving, Time management, Leadership, Empathy, Emotional intelligence, Self-managed, Self-organized, Strategic thinking.",
       },
     ],
   },
@@ -104,7 +113,7 @@ const qualificationData = [
     title: "education",
     data: [
       {
-        university: "Computer Engineer",
+        university: "Esprit",
         qualification: "Bachelor Degree in Computer Engineering",
         years: "2019-2022",
       },

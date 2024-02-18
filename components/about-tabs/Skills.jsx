@@ -17,10 +17,16 @@ const Skills = () => {
         {/* skills list */}
         <div>
           {getData(skillsData, "skills").data.map((item, index) => {
-            const { name } = item;
+            const { title, name } = item;
             return (
-              <div className="w-full text-left mx-auto xl:mx-0" key={index}>
-                <div className="font-medium">{name}</div>
+              <div
+                className="w-full text-left xl:mx-0 xl:flex lg:items-center item lg:justify-start"
+                key={index}
+              >
+                <div className="font-medium max-w-max">{title}</div>
+                <div className="font-light xl:pl-2 leading-none text-muted-foreground">
+                  {name}
+                </div>
               </div>
             );
           })}

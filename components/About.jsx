@@ -1,8 +1,9 @@
-import Image from "next/image";
-import DevImg from "./DevImg";
-
 // components
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import DevImg from "./DevImg";
+import PersonalInfo from "@/components/about-tabs/PersonalInfo";
+import Qualifications from "@/components/about-tabs/Qualifications";
+import Skills from "@/components/about-tabs/Skills";
 
 import {
   User2,
@@ -13,17 +14,11 @@ import {
   Calendar,
 } from "lucide-react";
 
-import PersonalInfo from "@/components/about-tabs/PersonalInfo";
-import Qualifications from "@/components/about-tabs/Qualifications";
-
 // data
 import aboutInfoData, {
-  skillsData,
-  qualificationData,
   pageAboutData,
   TabsCategoriesEnum,
 } from "@/shared/data/about.data";
-import Skills from "@/components/about-tabs/Skills";
 
 const infoData = [
   {
@@ -58,7 +53,7 @@ const infoData = [
 
 const About = () => {
   return (
-    <section className="xl:h-[860px] mt-[380px] xl:mt-0 pb-20 xl:py-20">
+    <section className="xl:h-[860px] mt-[300px] xl:mt-0 pb-20 xl:py-20">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           {pageAboutData.title}

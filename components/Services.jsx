@@ -30,7 +30,7 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <section className="lg:mt-[40px] mt-[10px] mb-12 xl:mb-36">
+    <section className="lg:mt-[40px] mt-[10px] mb-12 xl:mb-32">
       <div className="container mx-auto">
         <h2 className="section-title mb-24 xl:mb-32 text-center mx-auto ">
           {servicePageData.title}
