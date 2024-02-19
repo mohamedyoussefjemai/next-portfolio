@@ -1,5 +1,12 @@
 let projectsData = [
   {
+    image: "/projects/spn.jpeg",
+    category: "Fullstack",
+    name: "Hospitality Dashboard",
+    description:
+      "I worked on dashboard which allows you to manage the luxury fleet of cars",
+  },
+  {
     image: "/projects/scan and recycle.PNG",
     category: "Fullstack",
     name: "Scan & recycle Dashboard",
